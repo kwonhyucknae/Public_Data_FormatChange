@@ -5,7 +5,7 @@ setup(
     version='1.0',
     description='Data Format Change',
     author='Kwon Hyeoknae & Park Duri',
-    author_email='nhk321@naver.com  & 2011305026@skuniv.ac.kr',
+    author_email='nhk321@naver.com  & twooo.park@gmail.com',
     url='https://github.com/kwonhyucknae/Public_Data_FormatChange',
     download_url='https://github.com/kwonhyucknae/Public_Data_FormatChange/archive/1.0.tar.gz',
     install_requires=[],
