@@ -6,3 +6,6 @@ Controller 에서 -> Command 사용
 '''
 
 
+#패키지 테스트 함수
+def Test(a,b)
+    return a+b
