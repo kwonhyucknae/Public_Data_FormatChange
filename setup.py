@@ -19,6 +19,5 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3.6.5'
     ]
-
-
+    
 )
