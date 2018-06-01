@@ -5,6 +5,10 @@ def Test(a,b):
     return a+b
 
 # loc =="2013년_전년대비_시간대별_교통사고_사망자_현황.csv"
+# 문제점 1. encodig 형식이 맞지 않을 수 있다.
+# 문제점 2. 경로 인식 시, \2013을 제대로 인식 못했다.
+
+
 def readCSV(loc):
     f = open(loc, 'r', encoding="utf-8")
     datas = [] # 리스트 생성
