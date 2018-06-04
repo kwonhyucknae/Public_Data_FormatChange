@@ -33,3 +33,21 @@ def readCSV(loc, encoding):
 
 # readCSV(filePath, encoding)
 
+
+def readCSV(loc, encoding, *colNames):
+    try :
+        # with ~ as (auto file close)
+        with open(loc, encoding=encoding) as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                for(k,v) in row.items():
+                    datas[k].append(v)
+            for col in colNames:
+                print(datas[col])
+    except UnicodeDecodeError as e:
+        # 어떻게 해야, 자동으로 인코딩 방식을 변경해 줄 수 있을까?
+        print("인코딩 방식 "+encoding+"이(가) 맞지 않습니다.")
+    except FileNotFoundError:
+        # slash = "\\"
+        # filePath = path[0]+slash+fileName
+        print("파일 "+filePath+"이(가) 없습니다.")

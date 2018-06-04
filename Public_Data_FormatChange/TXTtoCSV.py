@@ -38,5 +38,5 @@ def TXTtoCSV(loc, encoding):
 TXTtoCSV(filePath, encoding)
 filePath = filePath.replace('.txt', '.csv')
 # Test readCSV
-readCSV(filePath, encoding)
+readCSV(filePath, encoding, "X", "Y")
 
